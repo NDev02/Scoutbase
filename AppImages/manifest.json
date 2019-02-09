@@ -4,8 +4,8 @@
     "theme_color": "#1a003e",
     "background_color": "#1a003e",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "/scoutbase",
+    "start_url": "/scoutbase",
     "icons": [
         {
             "src": "windows10/Square71x71Logo.scale-400.png",
