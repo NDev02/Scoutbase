@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+        :root {
+            --container-background: #333333;
+            --container-foreground: #eeeeee;
+
+            --outsider-background: #252525;
+            --outsider-foreground: #ffffff;
+
+            --card-background: #353535;
+            --card-foreground: #dddddd;
+
+            --nested-card-opacity: 0.9;
+
+            --border-radii: 0.7em;
+        }
+
+        html,
+        body {
+            background: url(./AppImages/ios/ios-appicon-120-120.png);
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        body .container {
+            padding: 2em;
+            background: #000000c2;
+            height: calc(100% - 4em);
+            color: var(--container-foreground);
+            animation-name: breath;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+
+        body .container h1 {
+            margin-top: 0;
+            padding-top: 1em;
+        }
+
+        /* "card" */
+        body .container div {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--card-background);
+            color: var(--card-foreground);
+            padding: 1em;
+            margin-top: 5em;
+            border-radius: var(--border-radii);
+        }
+
+        body .container div div {
+            margin-top: 0px;
+            transform: none;
+        }
+
+        .toggle .vis-toggle {
+            cursor: pointer;
+            float: right;
+            align-self: center;
+        }
+
+        /* iPhone 5s */
+        @media(max-width: 400px) {
+            body footer {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            body .container {
+                padding: 2em 5%;
+            }
+
+            body .container div {
+                margin: var(--border-radii) 10px;
+            }
+
+            .container h1 {
+                font-size: 1.4em;
+            }
+
+            .container h2 {
+                font-size: 1.2em;
+            }
+
+            .container h3 {
+                font-size: 1em;
+            }
+        }
+
+        @keyframes breath {
+            0% {
+                background-color: #06003acc;
+            }
+
+            50% {
+                background-color: #300814cc;
+            }
+
+            100% {
+                background-color: #06003acc;
+            }
+        }
+    </style>
+    <title>Scoutbase</title>
+    <link rel="manifest" href="AppImages/manifest.json">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Offline</h1>
+            <div>
+                <h2>Hmm...</h2>
+                <p>It looks like you've lost a network connection. Network connection is necessary for you to be able
+                    to
+                    use Scoutbase, check your WiFi and Mobile Data settings to make sure at least one is enabled and
+                    connected.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
