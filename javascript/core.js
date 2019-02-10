@@ -1,18 +1,27 @@
 
-    if (navigator.serviceWorker.controller) {
-        console.log('[PWA Builder] active service worker found, no need to register')
-    } else {
-        navigator.serviceWorker.register('pwabuilder-sw.js', {
-            scope: './'
-        }).then(function (reg) {
-            console.log('Service worker has been registered for scope:' + reg.scope);
-        });
-    }
+if (navigator.serviceWorker.controller) {
+    console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+    navigator.serviceWorker.register('pwabuilder-sw.js', {
+        scope: './'
+    }).then(function (reg) {
+        console.log('Service worker has been registered for scope:' + reg.scope);
+    });
+}
 
 window.addEventListener('load', e => {
     toggleConfigurer();
+    formConfigurer();
 });
 
+
+function formConfigurer() {
+    for (let form of document.querySelectorAll("form")) {
+        form.onsubmit = (event) => {
+            event.preventDefault();
+        }
+    }
+}
 
 function toggleConfigurer() {
     let toggles = document.querySelectorAll('.toggle');

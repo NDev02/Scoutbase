@@ -1,0 +1,42 @@
+form div {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+form div div[hidden] {
+    display: none !important;
+}
+
+form div div label,span {
+    align-self: center;
+}
+
+form div div * {
+    margin: 0 auto;
+}
+
+form div div button {
+    width: 3em;
+    height: 3em;
+    padding: 0px;
+    align-self: center;
+}
+
+.rocket {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.ship {
+
+}
+
+.hab {
+
+}
+
+.comment {
+
+}
+
