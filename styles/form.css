@@ -9,6 +9,7 @@ form div div[hidden] {
 
 form div div label,span {
     align-self: center;
+    text-align: center;
 }
 
 form div div * {
@@ -16,28 +17,78 @@ form div div * {
 }
 
 form div div button {
+    background: var(--button-background);
+    color: var(--button-foreground);
+    border: none;
+    border-radius: 0.7em;
     width: 3em;
     height: 3em;
     padding: 0px;
     align-self: center;
 }
 
+form div div img {
+    padding: 0.25em;
+    align-self: center;
+    width: 35px;
+    height: 35px;
+}
+
+form div div img.clicked {
+    background: var(--button-background-clicked);
+}
+
 .rocket {
     display: grid;
-    grid-gap: 2px;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0em;
 }
 
 .ship {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
 
+.ship label {
+    width: 100%;
+    text-align: center;
 }
 
 .hab {
-
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.comment {
-
+.hab select,label {
+    width: 100%;
 }
 
+.comment textarea {
+    width: calc(100% - 1.4em);
+    height: 8em;
+    border-radius: 0.7em;
+    padding: 0.7em;
+}
+
+.submit {
+    font-family: sans-serif;
+    width: 100%;
+    padding: 1em;
+    color: var(--button-foreground);
+    background: var(--button-background);
+    border: none;
+    border-radius: 0.7em;
+}
+
+select {
+    -webkit-appearance: none;
+    padding: 1em;
+    border: none;
+    border-radius: 0.7em;
+}

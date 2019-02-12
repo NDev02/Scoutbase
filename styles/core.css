@@ -9,6 +9,10 @@
     --card-background: #555555;
     --card-foreground: #dddddd;
 
+    --button-background: #dddddd;
+    --button-background-clicked: #808080;
+    --button-foreground: #555555;
+
     --nested-card-opacity: 0.9;
 
     --border-radii: 0.7em;
@@ -67,6 +71,10 @@ body footer * {
 body .container {
     color: var(--container-foreground);
     padding: 2em 10%;
+}
+
+select:focus,input:focus,button:focus{
+    outline: none;
 }
 
 /* "card" */

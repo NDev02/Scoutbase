@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="javascript/core.js"></script>
+    <script src="javascript/form.js"></script>
     <link rel="stylesheet" href="styles/core.css">
     <link rel="stylesheet" href="styles/form.css">
     <title>Scoutbase</title>
@@ -24,38 +25,83 @@
             <div class="toggle">
                 <h2 class="keep">Rocket</h2>
                 <div class="rocket">
+                    <label></label>
+                    <img src="assets/hatch.svg">
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <img src="assets/ball.svg">
+                    <label></label>
+
+                    <button onclick="dec('rocket-top-hatch')">-</button>
+                    <span id="rocket-top-hatch">0</span>
+                    <button onclick="inc('rocket-top-hatch')">+</button>
                     <label>Top Level</label>
-                    <span>0</span>
-                    <button>+</button>
-                    <button>-</button>
-                    <img width="49px" height="85px" src="assets/hatch.svg">
-                    <img width="49px" height="85px" src="assets/hatch.svg">
+                    <button onclick="dec('rocket-top-cargo')">-</button>
+                    <span id="rocket-top-cargo">0</span>
+                    <button onclick="inc('rocket-top-cargo')">+</button>
+
+                    <button onclick="dec('rocket-mid-hatch')">-</button>
+                    <span id="rocket-mid-hatch">0</span>
+                    <button onclick="inc('rocket-mid-hatch')">+</button>
                     <label>Mid Level</label>
-                    <span>0</span>
-                    <button>+</button>
-                    <button>-</button>
-                    <img width="49px" height="85px" src="assets/hatch.svg">
-                    <img width="49px" height="85px" src="assets/hatch.svg">
+                    <button onclick="dec('rocket-mid-cargo')">-</button>
+                    <span id="rocket-mid-cargo">0</span>
+                    <button onclick="inc('rocket-mid-cargo')">+</button>
+
+                    <button onclick="dec('rocket-low-hatch')">-</button>
+                    <span id="rocket-low-hatch">0</span>
+                    <button onclick="inc('rocket-low-hatch')">+</button>
                     <label>Low Level</label>
-                    <span>0</span>
-                    <button>+</button>
-                    <button>-</button>
-                    <img width="49px" height="85px" src="assets/hatch.svg">
-                    <img width="49px" height="85px" src="assets/hatch.svg">
+                    <button onclick="dec('rocket-low-cargo')">-</button>
+                    <span id="rocket-low-cargo">0</span>
+                    <button onclick="inc('rocket-low-cargo')">+</button>
                 </div>
             </div>
             <div class="toggle">
                 <h2 class="keep">Cargo Ship</h2>
-                <div class="ship"></div>
+                <div class="ship">
+                    <label></label>
+                    <img src="assets/hatch.svg">
+                    <label></label>
+                    <label></label>
+                    <img src="assets/ball.svg">
+                    <label></label>
+
+                    <button onclick="dec('cargo-hatch')">-</button>
+                    <span>0</span>
+                    <button onclick="inc('cargo-hatch')">+</button>
+
+                    <button onclick="dec('cargo-cargo')">-</button>
+                    <span>0</span>
+                    <button onclick="inc('cargo-cargo')">+</button>
+                </div>
             </div>
             <div class="toggle">
                 <h2 class="keep">Habitat</h2>
-                <div class="hab"></div>
+                <div class="hab">
+                    <label>Reached Level</label>
+                    <select>
+                        <option>No Climb</option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                    <label>How</label>
+                    <select>
+                        <option>Self Climbed</option>
+                        <option>Assisted Climb</option>
+                        <option>Assisted Other</option>
+                    </select>
+                </div>
             </div>
             <div class="toggle">
                 <h2 class="keep">Comments</h2>
-                <div class="comment"></div>
+                <div class="comment">
+                    <textarea></textarea>
+                </div>
             </div>
+            <button class="submit">Submit</button>
         </form>
     </div>
     <footer>
