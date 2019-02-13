@@ -16,6 +16,9 @@
     --nested-card-opacity: 0.9;
 
     --border-radii: 0.7em;
+
+    --input-background: #dddddd;
+    --input-foreground: #555555;
 }
 
 html {
@@ -73,7 +76,7 @@ body .container {
     padding: 2em 10%;
 }
 
-select:focus,input:focus,button:focus{
+select:focus,input:focus,button:focus,textarea{
     outline: none;
 }
 
@@ -99,7 +102,7 @@ body .container div {
     }
 
     body .container {
-        padding: 2em 5%;
+        padding: 2em 1em;
     }
 
     body .container div {

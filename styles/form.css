@@ -43,7 +43,7 @@ form div div img.clicked {
     grid-gap: 5px;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(7, 1fr);
-    padding: 0em;
+    padding: 0px!important;
 }
 
 .ship {
@@ -70,6 +70,8 @@ form div div img.clicked {
 }
 
 .comment textarea {
+    background: var(--input-background);
+    color: var(--input-foreground);
     width: calc(100% - 1.4em);
     height: 8em;
     border-radius: 0.7em;
@@ -87,6 +89,8 @@ form div div img.clicked {
 }
 
 select {
+    background: var(--input-background);
+    color: var(--input-foreground);
     -webkit-appearance: none;
     padding: 1em;
     border: none;
