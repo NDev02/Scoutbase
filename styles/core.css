@@ -73,7 +73,7 @@ body footer * {
 
 body .container {
     color: var(--container-foreground);
-    padding: 2em 10%;
+    padding: 2em 1em;
 }
 
 select:focus,input:focus,button:focus,textarea{
