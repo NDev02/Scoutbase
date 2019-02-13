@@ -73,6 +73,7 @@ body footer * {
 
 body .container {
     color: var(--container-foreground);
+    width: calc(100% - 2em);
     padding: 2em 1em;
 }
 
@@ -102,6 +103,7 @@ body .container div {
     }
 
     body .container {
+        width: calc(100% - 2em);
         padding: 2em 1em;
     }
 
