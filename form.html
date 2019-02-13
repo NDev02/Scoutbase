@@ -23,6 +23,22 @@
     <div class="container">
         <form>
             <div class="toggle">
+                <h2 class="keep">Team Configuration</h2>
+                <div class="config">
+                    <label>Team Number</label>
+                    <input type="number" oninput="setTeam()">
+
+                    <label>Match Number</label>
+                    <input type="number" onchange="setMatch()">
+
+                    <label>Alliance</label>
+                    <select onchange="setAlliance()">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+            <div class="toggle">
                 <h2 class="keep">Rocket</h2>
                 <div class="rocket">
                     <label></label>
@@ -82,27 +98,27 @@
                 <h2 class="keep">Habitat</h2>
                 <div class="hab">
                     <label>Reached Level</label>
-                    <select>
-                        <option>No Climb</option>
-                        <option>Low</option>
-                        <option>Medium</option>
-                        <option>High</option>
+                    <select onchange="setClimbTo()">
+                        <option value="no-climb">No Climb</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
                     </select>
                     <label>How</label>
-                    <select>
-                        <option>Self Climbed</option>
-                        <option>Assisted Climb</option>
-                        <option>Assisted Other</option>
+                    <select onchange="setClimb()">
+                        <option value="self">Self Climbed</option>
+                        <option value="assisted-by-other">Assisted Climb</option>
+                        <option value="assisted-other">Assisted Other</option>
                     </select>
                 </div>
             </div>
             <div class="toggle">
                 <h2 class="keep">Comments</h2>
                 <div class="comment">
-                    <textarea></textarea>
+                    <textarea onchange="setComment()"></textarea>
                 </div>
             </div>
-            <button class="submit">Submit</button>
+            <button class="submit" onclick="submit()">Submit</button>
         </form>
     </div>
     <footer>

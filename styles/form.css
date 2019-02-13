@@ -38,6 +38,33 @@ form div div img.clicked {
     background: var(--button-background-clicked);
 }
 
+.config {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.config select,input {
+    background: var(--input-background);
+    color: var(--input-foreground);
+    border-radius: 0.7em;
+    padding: 0.7em;
+}
+
+.config select {
+    width: 100%;
+}
+
+.config input {
+    border: none;
+    width: calc(100% - 1.4em);
+}
+
+.config label {
+    text-align: left;
+}
+
 .rocket {
     display: grid;
     grid-gap: 5px;
