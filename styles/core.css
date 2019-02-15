@@ -99,6 +99,7 @@ body .container div {
 .labeled-input:not([hidden]) {
     display: grid;
     grid-gap: 5px;
+    padding: 0px;
     grid-template-columns: 1fr 1fr;
 }
 
