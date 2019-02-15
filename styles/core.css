@@ -106,8 +106,8 @@ body .container div {
     align-self: center;
 }
 
-.labeled-input input[type~=color] {
-    margin: 0 auto;
+.labeled-input input{
+    width: 100%;
     border: none;
 }
 
