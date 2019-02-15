@@ -28,6 +28,8 @@ window.addEventListener('load', function() {
 });
 
 function inc(type) {
+    if(inputs[type] > 24)
+        return;
     inputs[type] ++;
     document.querySelector(`#${type}`).innerHTML = inputs[type];
 }

@@ -1,15 +1,15 @@
-container-background: #de5e03;
-container-foreground: #cccccc;
+container-background: #f9a26c;
+container-foreground: #222222;
 
-outsider-background: #b73301;
+outsider-background: #f26627;
 outsider-foreground: #ffffff;
 
-card-background: #ff7837;
-card-foreground: #eeeeee;
+card-background: #efeeee;
+card-foreground: #111111;
 
-button-background: #ffffff;
+button-background: #aa2222;
 button-background-clicked: #808080;
-button-foreground: #333333;
+button-foreground: #eeeeee;
 
 nested-card-opacity: 0.9;
 
