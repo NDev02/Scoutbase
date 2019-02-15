@@ -1,4 +1,5 @@
 let inputs = {
+    'event': localStorage.getItem('event'),
     'team': 0,
     'match': 0,
     'alliance': 'red',
@@ -52,5 +53,14 @@ function setComment() {
 }
 
 function submit() {
-    
+    let basecamp = new Basecamp();
+    let query = "";
+    for(let field of Object.keys(inputs)) {
+        query += `${field}=${inputs[field]}`;
+    }
+    basecamp.postMatchData(query);
+    // create match
+    // create alliance
+    // create team
+    // insert data
 }

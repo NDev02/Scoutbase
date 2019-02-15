@@ -1,4 +1,3 @@
-
 if (navigator.serviceWorker.controller) {
     console.log('[PWA Builder] active service worker found, no need to register')
 } else {
