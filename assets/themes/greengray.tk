@@ -1,7 +1,7 @@
-container-background: #999999;
+container-background: #c3c3c3;
 container-foreground: #000000;
 
-outsider-background: #c3c3c3;
+outsider-background: #999999;
 outsider-foreground: #000000;
 
 card-background: #9bca3c;
