@@ -1,25 +1,4 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-:root {
-    /* --container-background: #333333;
-    --container-foreground: #eeeeee;
-
-    --outsider-background: #252525;    
-    --outsider-foreground: #ffffff;
-
-    --card-background: #555555;
-    --card-foreground: #dddddd;
-
-    --button-background: #dddddd;
-    --button-background-clicked: #808080;
-    --button-foreground: #555555;
-
-    --nested-card-opacity: 0.9;
-
-    --border-radii: 0.7em;
-
-    --input-background: #dddddd;
-    --input-foreground: #555555; */
-}
 
 html {
     height: 100%;
@@ -97,7 +76,6 @@ body .container div {
 }
 
 .labeled-input:not([hidden]) {
-    background: red;
     display: grid;
     grid-gap: 5px;
     padding: 0px;
