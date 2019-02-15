@@ -106,8 +106,8 @@ body .container div {
     align-self: center;
 }
 
-.labeled-input input,select{
-    width: 100%;
+.labeled-input select {
+    margin: 0 auto;
     border: none;
 }
 
