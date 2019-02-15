@@ -1,13 +1,13 @@
-container-background: #002e94;
-container-foreground: #cccccc;
+container-background: #999999;
+container-foreground: #000000;
 
-outsider-background: #00145f;
-outsider-foreground: #ffffff;
+outsider-background: #c3c3c3;
+outsider-foreground: #000000;
 
-card-background: #0f0090;
+card-background: #9bca3c;
 card-foreground: #eeeeee;
 
-button-background: #bbbbbb;
+button-background: #ffffff;
 button-background-clicked: #808080;
 button-foreground: #333333;
 
