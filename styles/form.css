@@ -98,6 +98,7 @@ form div div img.clicked {
 }
 
 .comment textarea {
+    font-family: sans-serif;
     background: var(--input-background);
     color: var(--input-foreground);
     width: calc(100% - 1.4em);

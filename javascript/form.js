@@ -16,6 +16,17 @@ let inputs = {
     'comment': ''
 }
 
+window.addEventListener('load', function() {
+    document.querySelector('.submit').onclick = function() {
+        event.preventDefault();
+        submit();
+    }
+    let toggles = document.querySelectorAll('.toggle');
+    for(let toggle of toggles) {
+        toggle.querySelector('i').onclick();
+    }
+});
+
 function inc(type) {
     inputs[type] ++;
     document.querySelector(`#${type}`).innerHTML = inputs[type];
@@ -53,14 +64,30 @@ function setComment() {
 }
 
 function submit() {
-    let basecamp = new Basecamp();
-    let query = "";
-    for(let field of Object.keys(inputs)) {
-        query += `${field}=${inputs[field]}`;
+    if(inputs.event == null) {
+        inputs.event = prompt("Enter the event key.");
+        localStorage.setItem('event', inputs.event);
     }
-    basecamp.postMatchData(query);
-    // create match
-    // create alliance
-    // create team
-    // insert data
+    let basecamp = new Basecamp();
+    basecamp.postMatchData(inputs.event, inputs, res => {
+        alert(res.msg);
+        document.querySelector('form').reset();
+        inputs = {
+            'event': localStorage.getItem('event'),
+            'team': 0,
+            'match': 0,
+            'alliance': 'red',
+            'rocket-top-cargo': 0,
+            'rocket-top-hatch': 0,
+            'rocket-mid-cargo': 0,
+            'rocket-mid-hatch': 0,
+            'rocket-low-cargo': 0,
+            'rocket-low-hatch': 0,
+            'cargo-hatch': 0,
+            'cargo-cargo': 0,
+            'hab-level': 'low',
+            'how-climb': 'self',
+            'comment': ''
+        }
+    });
 }
