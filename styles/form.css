@@ -50,6 +50,7 @@ form div div img.clicked {
     color: var(--input-foreground);
     border-radius: 0.7em;
     padding: 0.7em;
+    border: none;
 }
 
 .config select {
