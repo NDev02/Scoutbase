@@ -107,7 +107,7 @@ body .container div {
 }
 
 .labeled-input select {
-    margin: 0 auto;
+    width: 100%;
     border: none;
 }
 
