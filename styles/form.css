@@ -92,12 +92,13 @@ form div div img.clicked {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.hab select,label {
+.hab select,.hab label,.config label {
     text-align: left!important;
     width: 100%;
 }
 
 .comment textarea {
+    border: none;
     font-family: sans-serif;
     background: var(--input-background);
     color: var(--input-foreground);

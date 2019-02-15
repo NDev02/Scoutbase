@@ -1,0 +1,19 @@
+container-background: #002e94;
+container-foreground: #cccccc;
+
+outsider-background: #00145f;
+outsider-foreground: #ffffff;
+
+card-background: #0f0090;
+card-foreground: #eeeeee;
+
+button-background: #bbbbbb;
+button-background-clicked: #808080;
+button-foreground: #333333;
+
+nested-card-opacity: 0.9;
+
+border-radii: 0.7em;
+
+input-background: #dddddd;
+input-foreground: #555555;

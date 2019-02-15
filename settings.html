@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="javascript/core.js"></script>
+    <script src="javascript/themekit.js"></script>
+    <script src="javascript/settings.js"></script>
     <link rel="stylesheet" href="styles/core.css">
+    <link rel="stylesheet" href="styles/form.css">
     <title>Scoutbase</title>
     <link rel="manifest" href="AppImages/manifest.json">
+    <link rel="themekit" href="assets/themes/dark.tk">
 </head>
 
 <body>
@@ -19,6 +23,18 @@
         <a href="settings.html"><i class="material-icons">settings</i></a>
     </nav>
     <div class="container">
+        <div class="toggle">
+            <h2 class="keep">Color Themes</h2>
+            <div class="labeled-input">
+                <label>Applied Theme</label>
+                <select id="theme-select" onchange="themeChanged()">
+                    <option value="assets/themes/dark.tk">Dark</option>
+                    <option value="assets/themes/light.tk">Light</option>
+                    <option value="assets/themes/cool.tk">Cool</option>
+                    <option value="assets/themes/warm.tk">Warm</option>
+                </select>
+            </div>
+        </div>
     </div>
     <footer>
         <a>Scoutbase</a>

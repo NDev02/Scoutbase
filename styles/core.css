@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 :root {
-    --container-background: #333333;
+    /* --container-background: #333333;
     --container-foreground: #eeeeee;
 
     --outsider-background: #252525;    
@@ -18,7 +18,7 @@
     --border-radii: 0.7em;
 
     --input-background: #dddddd;
-    --input-foreground: #555555;
+    --input-foreground: #555555; */
 }
 
 html {
@@ -94,6 +94,21 @@ body .container div {
     cursor: pointer;
     float: right;
     align-self: center;
+}
+
+.labeled-input:not([hidden]) {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.labeled-input * {
+    align-self: center;
+}
+
+.labeled-input input[type~=color] {
+    margin: 0 auto;
+    border: none;
 }
 
 /* iPhone 5s */
