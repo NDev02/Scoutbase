@@ -5,7 +5,7 @@ class Service {
         this.tbaKey = "l546X6HHpPOiuPH0ZtO4rMgY1FvUWYIb9ruZRSdBcMlOsKBlMuyPzplegeFF7Oue";
         this.tbaRoot = "https://www.thebluealliance.com/api/v3";
         this.apiKey = '2596ccc0-09d5-4b73-bebc-4107ee0c8f6e';
-        this.root = "http://localhost:8080";
+        this.root = "http://baab73ae.ngrok.io";
     }
 
     request(subdir, isRoot, callback) {
