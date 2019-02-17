@@ -7,7 +7,7 @@ outsider-foreground: #ffffff;
 card-background: #0091d5;
 card-foreground: #ffffff;
 
-button-background: #c84825;
+button-background: #006c9e;
 button-foreground: #dddddd;
 
 nested-card-opacity: 0.9;
