@@ -8,6 +8,7 @@
     <script src="javascript/core.js"></script>
     <script src="javascript/themekit.js"></script>
     <link rel="stylesheet" href="styles/core.css">
+    <link rel="stylesheet" href="styles/form.css">
     <title>Scoutbase</title>
     <link rel="manifest" href="AppImages/manifest.json">
     <link rel="themekit" href="assets/themes/dark.tk">
@@ -21,6 +22,47 @@
         <a href="settings.html"><i class="material-icons">settings</i></a>
     </nav>
     <div class="container">
+        <div class="toggle">
+            <h2 class="keep">Team Selection</h2>
+            <div class="labeled-input">
+                <label>Team</label>
+                <input id="team" type="number" onchange="setTeam()">
+            </div>
+        </div>
+        <div class="toggle">
+            <h2 class="keep" id="team-name">Devil Tech</h2>
+            <h3 id="team-number">1559</h3>
+            <label>Strengths:</label>
+            <ul>
+                <li>Top Level Rocket - Cargo</li>
+                <li>Cargo Ship - Cargo</li>
+            </ul>
+            <label>Deficiencies:</label>
+            <ul>
+                <li>Top Level Rocket - Hatch</li>
+                <li>Cargo Ship - Hatch</li>
+            </ul>
+            <p id="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit felis,
+                viverra
+                a
+                consectetur vel, volutpat accumsan massa. Quisque volutpat diam metus, vel elementum ligula
+                sagittis
+                ut.
+                Nam non mauris id risus volutpat semper. Curabitur aliquam luctus felis at fermentum. Nam tempus
+                interdum
+                mauris, eu semper ex tincidunt et. Maecenas sodales nisl arcu, quis porttitor lorem dignissim sit
+                amet.
+                Morbi bibendum, mauris nec lobortis porttitor, purus nibh sollicitudin dolor, non scelerisque
+                turpis
+                tortor
+                id tortor. Vivamus tristique dolor vitae lacus maximus placerat. Curabitur efficitur magna ipsum,
+                cursus
+                venenatis purus feugiat id. Aenean varius id risus id gravida. Duis nec neque a sapien iaculis
+                pretium.
+                Maecenas venenatis feugiat felis in tempor. Quisque consequat diam at nisl maximus lobortis.</p>
+            <button>Add to watchlist</button>
+            <button>Remove from selection</button>
+        </div>
     </div>
     <footer>
         <a>Scoutbase</a>
