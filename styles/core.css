@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
+:root {    
+    --failing-red: #c20101;
+    --mediocre-yellow: #c29e01;
+    --passing-green: #07c201;
+}
+
 html {
     height: 100%;
 }

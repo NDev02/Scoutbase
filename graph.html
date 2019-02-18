@@ -9,6 +9,7 @@
     <script src="javascript/themekit.js"></script>
     <link rel="stylesheet" href="styles/core.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/graph.css">
     <title>Scoutbase</title>
     <link rel="manifest" href="AppImages/manifest.json">
     <link rel="themekit" href="assets/themes/dark.tk">
@@ -32,16 +33,29 @@
         <div class="toggle">
             <h2 class="keep" id="team-name">Devil Tech</h2>
             <h3 id="team-number">1559</h3>
-            <label>Strengths:</label>
-            <ul id="team-strengths">
-                <li>Top Level Rocket - Cargo</li>
-                <li>Cargo Ship - Cargo</li>
-            </ul>
-            <label>Deficiencies:</label>
-            <ul id="team-deficiencies">
-                <li>Top Level Rocket - Hatch</li>
-                <li>Cargo Ship - Hatch</li>
-            </ul>
+            <table width="100%" cellspacing="0px">
+                <tr>
+                    <th>Cargo</th>
+                    <th>Hatch</th>
+                </tr>
+                <tr>
+                    <td>Rocket Top</td>
+                    <td>Rocket Top</td>
+                </tr>
+                <tr>
+                    <td>Rocket Mid</td>
+                    <td>Rocket Mid</td>
+                </tr>
+                <tr>
+                    <td>Rocket Low</td>
+                    <td>Rocket Low</td>
+                </tr>
+                <tr>
+                    <td>Cargo Ship</td>
+                    <td>Cargo Ship</td>
+                </tr>
+            </table>
+            <p>Climbing: <span id="team-climb">Self</span></p>
             <p id="team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit felis,
                 viverra
                 a
