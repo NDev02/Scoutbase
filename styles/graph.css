@@ -29,3 +29,15 @@ table td {
     padding: 0.2em;
     background: var(--failing-red);
 }
+
+.failing {
+    background: var(--failing-red);
+}
+
+.mediocre {
+    background: var(--mediocre-yellow);
+}
+
+.passing {
+    background: var(--passing-green);
+}

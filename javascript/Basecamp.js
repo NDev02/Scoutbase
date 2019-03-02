@@ -5,7 +5,7 @@ class Service {
         this.tbaKey = "l546X6HHpPOiuPH0ZtO4rMgY1FvUWYIb9ruZRSdBcMlOsKBlMuyPzplegeFF7Oue";
         this.tbaRoot = "https://www.thebluealliance.com/api/v3";
         this.apiKey = '2596ccc0-09d5-4b73-bebc-4107ee0c8f6e';
-        this.root = "https://5daef3fb.ngrok.io";
+        this.root = "https://929c2996.ngrok.io";
     }
 
     request(subdir, isRoot, callback) {
@@ -53,5 +53,9 @@ class Basecamp extends Service {
     postMatchData(event, data, callback) {
         data['scouter'] = localStorage.getItem('name') + localStorage.getItem('team');
         super.send(`${event}/scout`, false, data, callback);
+    }
+
+    getMatchesForTeam(event, team, cb) {
+        super.request(`${event}/matches/${team}`, false, cb);
     }
 }

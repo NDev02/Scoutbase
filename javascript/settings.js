@@ -1,7 +1,8 @@
 window.addEventListener('load', function() {
     document.querySelector('#theme-select').selectedIndex = localStorage.getItem('theme-index');
-    document.querySelector('#name').value = localStorage.getItem('name') || "JohnDoe";
-    document.querySelector('#team').value = localStorage.getItem('team') || 0;
+    document.querySelector('#name').placeholder = localStorage.getItem('name') || "JohnDoe";
+    document.querySelector('#team').placeholder = localStorage.getItem('team') || 0;
+    document.querySelector('#event-code').placeholder = localStorage.getItem('event') || "";
 });
 
 function themeChanged() {
@@ -16,4 +17,8 @@ function setName() {
 
 function setTeam() {
     localStorage.setItem('team', event.target.value);
+}
+
+function setEvent() {
+    localStorage.setItem('event', event.target.value);
 }

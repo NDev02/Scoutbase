@@ -70,6 +70,7 @@ function submit() {
         inputs.event = prompt("Enter the event key.");
         localStorage.setItem('event', inputs.event);
     }
+    inputs["time-stamp"] = new Date();
     let basecamp = new Basecamp();
     basecamp.postMatchData(inputs.event, inputs, res => {
         alert(res.msg);
