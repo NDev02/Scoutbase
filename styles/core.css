@@ -66,6 +66,10 @@ select:focus,input:focus,button:focus,textarea{
     outline: none;
 }
 
+#form {
+    background: var(--container-background);
+}
+
 /* "card" */
 body .container div {
     background: var(--card-background);
