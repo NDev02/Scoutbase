@@ -10,7 +10,7 @@ class Service {
 
     request(subdir, isRoot, callback) {
         if (!isRoot)
-            fetch(`${this.root}/${subdir}?key=${this.apiKey}`).then(res => res.json()).then(callback);
+            fetch(this.root + "/" + subdir + "?key=" + this.apiKey).then(res => res.json()).then(callback);
         else
             fetch(`${this.root}/admin/${subdir}?key=${this.apiKey}`).then(res => res.json()).then(callback);
     }
