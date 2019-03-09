@@ -16,10 +16,14 @@ class Service {
     }
 
     send(subdir, isRoot, data, callback) {
-        if (!isRoot)
-            this.post(`${this.root}/${subdir}?key=${this.apiKey}`, data).then(res => res.json()).then(callback);
-        else
+        if (!isRoot) {
+            this.post(`${this.root}/${subdir}?key=${this.apiKey}`, data).then(res => res.json()).then(callback).catch(err => {
+                alert(err);
+            });
+        }
+        else {
             this.post(`${this.root}/admin/${subdir}?key=${this.apiKey}`, data).then(res => res.json()).then(callback);
+        }
     }
 
     post(url, data) {
@@ -27,7 +31,6 @@ class Service {
             method: "POST",
             mode: "cors",
             cache: "no-cache",
-            credentials: "same-origin",
             headers: {
                 "Content-Type": "application/json"
             },
