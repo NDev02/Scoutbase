@@ -19,6 +19,7 @@ class Service {
         if (!isRoot) {
             this.post(this.root + "/" + subdir + "?key=" + this.apiKey, data).then(res => res.json()).then(callback).catch(err => {
                 alert(err);
+                console.log(err);
             });
         }
         else {
