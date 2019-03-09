@@ -1,22 +1,22 @@
-form div {
+#form div {
     margin-right: 0!important;
     margin-left: 0!important;
 }
 
-form div div[hidden] {
+#form div div[hidden] {
     display: none !important;
 }
 
-form div div label,span {
+#form div div label,span {
     align-self: center;
     text-align: center;
 }
 
-form div div * {
+#form div div * {
     margin: 0 auto;
 }
 
-form div div button {
+#form div div button {
     background: var(--button-background);
     color: var(--button-foreground);
     border: none;
@@ -27,14 +27,14 @@ form div div button {
     align-self: center;
 }
 
-form div div img {
+#form div div img {
     padding: 0.25em;
     align-self: center;
     width: 35px;
     height: 35px;
 }
 
-form div div img.clicked {
+#form div div img.clicked {
     background: var(--button-background-clicked);
 }
 
