@@ -35,7 +35,7 @@ class Service {
             referrer: "no-referrer",
             header: {
                 'Content-Type': 'application/json'
-            }
+            },
             body: data
         });
     }
