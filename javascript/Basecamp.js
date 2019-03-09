@@ -33,7 +33,10 @@ class Service {
             cache: "no-cache",
             redirect: "follow",
             referrer: "no-referrer",
-            body: JSON.stringify(data)
+            header: {
+                'Content-Type': 'application/json'
+            }
+            body: data
         });
     }
 }
