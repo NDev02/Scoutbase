@@ -74,7 +74,7 @@ function submit() {
     let basecamp = new Basecamp();
     basecamp.postMatchData(inputs.event, inputs, res => {
         alert(res.msg);
-        document.querySelector('form').reset();
+        document.querySelector('#form').reset();
         inputs = {
             'event': localStorage.getItem('event'),
             'team': 0,
