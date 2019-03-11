@@ -33,7 +33,7 @@ class Service {
             header: {
                 'Content-Type': 'application/json'
             },
-            body: data
+            body: JSON.stringify(data);
         });
     }
 }
