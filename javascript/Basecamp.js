@@ -50,7 +50,9 @@ class Basecamp extends Service {
 
     test() {
         super.request('', false, res => {
-            console.log(res);
+            alert(res);
+        }).catch(e => {
+            alert(e);
         });
     }
 
