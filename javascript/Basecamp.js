@@ -31,7 +31,8 @@ class Service {
         return fetch(url, {
             method: "POST",
             mode: "cors",
-            header: {
+            headers: {
+                'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
