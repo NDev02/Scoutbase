@@ -74,7 +74,7 @@ function submit() {
     }
     inputs["time-stamp"] = new Date();
     let basecamp = new Basecamp();
-    basecamp.postMatchData('2019nyro', inputs, res => {
+    basecamp.postMatchData(inputs.event, inputs, res => {
         alert(res.msg);
         document.querySelector("#form").reset();
         let inputs = {
