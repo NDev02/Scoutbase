@@ -74,8 +74,8 @@ function submit() {
     }
     inputs["time-stamp"] = new Date();
     let basecamp = new Basecamp();
-    /*basecamp.postMatchData(inputs.event, inputs, res => {
+    basecamp.postMatchData(JSON.stringify(inputs.event), JSON.stringify(inputs), res => {
         alert(res.msg);
         location.reload(true);
-    });*/
+    });
 }
