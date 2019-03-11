@@ -74,7 +74,7 @@ function submit() {
     }
     inputs["time-stamp"] = new Date();
     let basecamp = new Basecamp();
-    basecamp.postMatchData(JSON.stringify(inputs.event), JSON.stringify(inputs), res => {
+    basecamp.postMatchData('2019nyro', JSON.stringify(inputs), res => {
         alert(res.msg);
         location.reload(true);
     });
