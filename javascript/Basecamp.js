@@ -18,10 +18,7 @@ class Service {
     send(subdir, isRoot, data, callback) {
         if (!isRoot) {
             this.post(this.root + "/" + subdir + "?key=" + this.apiKey, data).then(res => res.json()).then(callback).catch(err => {
-                alert(err.fileName);
-                alert(err.lineNumber);
                 alert(err);
-                console.log(err);
             });
         }
         else {
