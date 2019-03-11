@@ -13,7 +13,9 @@ let inputs = {
     'cargo-cargo': 0,
     'hab-level': 'low',
     'how-climb': 'self',
-    'comment': ''
+    'comment': '',
+    'scouter': '',
+    'time-stamp': ''
 }
 
 window.addEventListener('load', function() {
