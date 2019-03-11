@@ -57,8 +57,8 @@ class Basecamp extends Service {
     }
 
     postMatchData(event, data, callback) {
-        data.scouter = localStorage.getItem('name') + localStorage.getItem('team');
-        super.send(event + "/scout", false, data, callback);
+        //data.scouter = localStorage.getItem('name') + localStorage.getItem('team');
+        super.send(event + "/scout", false, JSON.stringify(data), callback);
     }
 
     getMatchesForTeam(event, team, cb) {
