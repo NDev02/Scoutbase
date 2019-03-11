@@ -33,9 +33,6 @@ class Service {
         return fetch(url, {
             method: "POST",
             mode: "cors",
-            cache: "no-cache",
-            redirect: "follow",
-            referrer: "no-referrer",
             header: {
                 'Content-Type': 'application/json'
             },
@@ -58,7 +55,6 @@ class Basecamp extends Service {
 
     postMatchData(event, data, callback) {
         data.scouter = localStorage.getItem('name') + localStorage.getItem('team');
-        alert(JSON.stringify(data));
         super.send(event + "/scout", false, data, callback);
     }
 
