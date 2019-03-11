@@ -10,7 +10,7 @@ class Service {
 
     request(subdir, isRoot, callback) {
         if (!isRoot)
-            fetch(this.root + "/" + subdir + "?key=" + this.apiKey).then(res => res.json()).then(callback);
+            fetch(this.root + "/" + subdir + "?key=" + this.apiKey).then(res => res.json()).then(callback).catch(e => alert(e));
         else
             fetch(`${this.root}/admin/${subdir}?key=${this.apiKey}`).then(res => res.json()).then(callback);
     }
@@ -51,8 +51,6 @@ class Basecamp extends Service {
     test() {
         super.request('', false, res => {
             alert(res);
-        }).catch(e => {
-            alert(e);
         });
     }
 
