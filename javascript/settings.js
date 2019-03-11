@@ -24,6 +24,6 @@ function setEvent() {
 }
 
 function testConnection() {
-    Basecamp server = new Basecamp();
+    let server = new Basecamp();
     server.test();
 }
