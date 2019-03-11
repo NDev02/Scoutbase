@@ -22,3 +22,8 @@ function setTeam() {
 function setEvent() {
     localStorage.setItem('event', event.target.value);
 }
+
+function testConnection() {
+    Basecamp server = new Basecamp();
+    server.test();
+}
