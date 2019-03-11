@@ -16,7 +16,7 @@ let inputs = {
     'comment': '',
     'scouter': '',
     'time-stamp': ''
-}
+};
 
 window.addEventListener('load', function() {
     document.querySelector('.submit').onclick = function() {
@@ -76,6 +76,25 @@ function submit() {
     let basecamp = new Basecamp();
     basecamp.postMatchData('2019nyro', inputs, res => {
         alert(res.msg);
-        location.reload(true);
+        document.querySelector("#form").reset();
+        let inputs = {
+            'event': localStorage.getItem('event'),
+            'team': 0,
+            'match': 0,
+            'alliance': 'red',
+            'rocket-top-cargo': 0,
+            'rocket-top-hatch': 0,
+            'rocket-mid-cargo': 0,
+            'rocket-mid-hatch': 0,
+            'rocket-low-cargo': 0,
+            'rocket-low-hatch': 0,
+            'cargo-hatch': 0,
+            'cargo-cargo': 0,
+            'hab-level': 'low',
+            'how-climb': 'self',
+            'comment': '',
+            'scouter': '',
+            'time-stamp': ''
+        };
     });
 }
