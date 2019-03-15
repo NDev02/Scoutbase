@@ -74,6 +74,9 @@ function submit() {
     }
     inputs["time-stamp"] = new Date();
     let basecamp = new Basecamp();
+    inputs.match = parseInt(inputs.match);
+    inputs.team = parseInt(inputs.team);
+    inputs.event = inputs.event.toLowerCase();
     basecamp.postMatchData(inputs.event, inputs, res => {
         alert(res.msg);
         document.querySelector("#form").reset();
