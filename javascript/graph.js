@@ -2,7 +2,7 @@
 function setTeam() {
     let basecamp = new Basecamp();
     basecamp.getMatchesForTeam(localStorage.getItem('event'), event.target.value, data => {
-        console.log(data);
+        alert(data);
     });
 }
 
