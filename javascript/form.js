@@ -79,25 +79,5 @@ function submit() {
     inputs.event = inputs.event.toLowerCase();
     basecamp.postMatchData(inputs.event, inputs, res => {
         alert(res.msg);
-        document.querySelector("#form").reset();
-        let inputs = {
-            'event': localStorage.getItem('event'),
-            'team': 0,
-            'match': 0,
-            'alliance': 'red',
-            'rocket-top-cargo': 0,
-            'rocket-top-hatch': 0,
-            'rocket-mid-cargo': 0,
-            'rocket-mid-hatch': 0,
-            'rocket-low-cargo': 0,
-            'rocket-low-hatch': 0,
-            'cargo-hatch': 0,
-            'cargo-cargo': 0,
-            'level': 'no-climb',
-            'how-climb': 'self',
-            'comment': '',
-            'scouter': '',
-            'time-stamp': ''
-        };
-    });
+        location.reload();
 }
