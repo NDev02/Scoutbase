@@ -80,4 +80,5 @@ function submit() {
     basecamp.postMatchData(inputs.event, inputs, res => {
         alert(res.msg);
         location.reload();
+    });
 }
