@@ -45,6 +45,13 @@ function dec(type) {
 
 function setTeam() {
     inputs['team'] = event.target.value;
+    let basecamp = new Basecamp();
+    basecamp.request(`${inputs.event}/teams`, false, data => {
+        if(!data.includes("frc" + inputs["team"]))
+            document.querySelector('#warning').hidden = false;
+        else
+            document.querySelector('#warning').hidden = true;
+    });
 }
 
 function setMatch() {

@@ -40,6 +40,22 @@ class Service {
     }
 }
 
+class BlueAlliance extends Service {
+    constructor() {
+        super();
+        this.root = this.tbaRoot;
+        this.apiKey = this.tbaKey;
+    }
+
+    request(subdir, callback) {
+        fetch(this.root + "/" + subdir + "?X-TBA-Auth-Key=" + this.apiKey).then(res => res.json()).then(callback).catch(e => alert(e));
+    }
+
+    getTeamName(team, callback) {
+        this.request(`team/frc${team}`, callback);
+    }
+}
+
 class Basecamp extends Service {
 
     constructor() {
@@ -59,5 +75,9 @@ class Basecamp extends Service {
 
     getMatchesForTeam(event, team, cb) {
         super.request(`${event}/matches/${team}`, false, cb);
+    }
+
+    getReportForTeam(event, team, cb) {
+        super.request(`${event}/teams/${team}`, false, cb);
     }
 }
