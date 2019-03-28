@@ -127,3 +127,7 @@ select {
     border: none;
     border-radius: 0.7em;
 }
+
+#warning {
+    color: #a50000;
+}
